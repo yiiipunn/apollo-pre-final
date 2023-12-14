@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Mitr:wght@200&display=swap");
+@font-face {
+  font-family: "Mitr";
+  src: url("Mitr-Light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  unicode-range: U+0E00- U+0E7F;
+}
+body {
+  font-family: "Koulen", "Mitr", sans-serif;
+  background: linear-gradient(
+    180deg,
+    rgba(109, 30, 49, 1) 0%,
+    rgba(208, 96, 11, 1) 100%
+  );
+  min-height: 100vh;
+  margin: 0;
+  background-attachment: fixed;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  margin: 0 10%;
+}
+.title {
+  text-align: start;
+}
+
+#pageTitle,
+#pageSubTitle {
+  margin-left: 10%;
+  color: white;
+  filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.7));
+}
+
+#pageTitle {
+  font-family : "Koulen", sans-serif;
+}
+#pageSubTitle {
+  font-family : "Mitr", sans-serif;
+}
+
+#dropdownMenu {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fdf5ea;
+  border-radius: 14px;
+  border: none;
+  padding: 5px 10px;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  font-family: "Mitr", sans-serif;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.custom-select {
+  position: relative;
+  margin-right: 2%;
+  align-self: flex-start;
+  margin-top: 50px;
+  width: 25%;
+}
+.custom-select::before,
+.custom-select::after {
+  position: absolute;
+  content: "";
+  right: 1rem;
+  pointer-events: none;
+}
+
+.custom-select::before {
+  border-left: 0.3rem solid transparent;
+  border-right: 0.3rem solid transparent;
+  border-bottom: 0.3rem solid black;
+  top: 30%;
+}
+
+.custom-select::after {
+  border-left: 0.3rem solid transparent;
+  border-right: 0.3rem solid transparent;
+  border-top: 0.3rem solid black;
+  top: 55%;
+}
+
+#cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  margin: 10px 10%;
+  border: 1px solid #ddd;
+  
+  background-color: #fdf5ea;
+  z-index: 999;
+  width: 75%;
+}
+
+.card-image {
+  width: 35%;
+  background-size: cover;
+  background-position: center;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-details {
+  text-align: left;
+  width: 100%;
+  color: #675c62;
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    border-radius: 25px;
+  }
+
+  .card-image {
+    margin-bottom: 10px;
+    height: 150px;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+  }
+
+  .card-details {
+    text-align: left;
+    padding-left: 15%;
+    width: 100%;
+    color: #675c62;
+    font-family: "Mitr", sans-serif;
+  }
+
+  .card-details h2 {
+    font-size: 22px;
+    padding-right: 22%;
+    margin-bottom: -1%;
+  }
+  .card-details p {
+    margin-right: 20%;
+    margin-bottom: -2%;
+  }
+  
+
+  .header {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .title {
+    text-align: center;
+  }
+  #pageTitle,
+  #pageSubTitle {
+    margin-left: 0;
+    color: white;
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.7));
+    margin-bottom: -20%;
+  }
+  .custom-select {
+    margin-right: 2%;
+    width: 150px;
+    align-self: flex-end;
+    margin-bottom: 20px;
+  }
+  #dropdownMenu {
+    width: 150px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 601px) {
+  .card {
+    flex-direction: row;
+    border-radius: 40px;
+  }
+
+  .card-image {
+    margin-right: 30px;
+    border-radius: 40px 0 0 40px;
+  }
+}

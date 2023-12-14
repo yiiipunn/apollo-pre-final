@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/styles/output.css" rel="stylesheet" />
+    <script src="script.js"></script>
+    <title>Satriwit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mitr&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    /><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <body class="font-mitr">
+     <!--Nav bar Start-->
+    <nav class="fixed z-10 flex flex-wrap w-full justify-center py-[1rem] h-14  md:bg-transparent [2rem] sm:h-20 duration-300 ease-in-out">
+        <div class="container justify-between flex items-center mx-auto ">
+            <a href="#">
+                <div class="static hidden md:flex-row justify-center items-center mx-4 my-2">
+                <link href="/" class="h-20"><img src="images/logo/aplogo.png" alt="SW Vichakarn logo" class="h-[100%] w-1/4 mr-8"></link>
+                </div>
+            </a>
+            <div  onclick="myFunction()" class="text-center p-auto p-1 flex flex-col bg-slate-900 bg-opacity-60 space-y-2  rounded shadow md:hidden hover:scale-105 duration-300 ease-in-out">
+                <span class="block w-8 h-1 bg-white"></span>
+                <span class="block w-8 h-1 bg-white"></span>
+                <span class="block w-5 h-1 bg-white"></span>
+            </div>
+        </div>
+
+        <div id="MenuMol" class="hidden flex md:hidden top-14 z-10 fixed bg-slate-900 bg-opacity-60 w-full pb-8">
+            <div class="flex flex-col pt-4 gap-4 text-white ml-8 text-center">
+                <a href="index.html" class="hover:text-sky-200 "><div>กลับสู่หน้าหลัก</div></a>
+            </div>
+        </div>
+       
+    </nav>
+      <!--Nav bar End-->
+<div class = "flex flex-col justify-center items-center gap-x-4 pt-5">
+        <div class="Home bg-cover bg-no-repeat w-full h-full pt-4" id="home">
+        <h1 class="text-3xl font-bold text-black flex text-center">แผนผังงาน</h1>
+        <div
+        class="hidden md:block h-1 w-52 bg-gradient-to-l from-white to-[#00000000] rounded-r-full"
+    ></div>
+        <div class=" flex px-4">
+            <img src="../images/map.png" alt="" class="w-full rounded-lg">
+        </div>
+
+        <div class="grid flex-row gap-2 text-center items-center ">
+          <button class="col-span-2 btn rounded-lg hover:bg-yellow-200 hover:text-[#6A1D2F] " >01 อาคารเอกอำนวยการ <br>  02 อาคารสานศิลป์สถาน</button>
+          <button class="col-span-2 btn rounded-lg hover:bg-yellow-200 hover:text-[#6A1D2F]" >03 อาคารสมเด็จฯ</button>
+          <button class="col-span-2 btn rounded-lg hover:bg-yellow-200 hover:text-[#6A1D2F]" >04 อาคารเพชรคหกรรม</button>
+          <button class="col-span-2 btn rounded-lg hover:bg-yellow-200 hover:text-[#6A1D2F]">05 อาคารล้ำวิทย์เนาว์ </button>
+          <button class="col-span-2 btn rounded-lg hover:bg-yellow-200 hover:text-[#6A1D2F]" >06 อาคารเก้าทศวรรษ </button>
+          <button class="col-span-2 btn rounded-lg hover:bg-yellow-200 hover:text-[#6A1D2F]" >07 อาคารเบญจภัทรดิเรก</button>
+
+        </div>
+
+        <div
+        class="w-full flex flex-col flex-grow gap-y-8 items-center"
+        id="travel"
+        >
+        <div class="flex items-center gap-x-4 pt-5">
+            <h1 class="text-3xl font-bold text-black">วิธีการเดินทาง</h1>
+            <div
+            class="hidden md:block h-1 w-52 bg-gradient-to-r from-white to-[#00000000] rounded-l-full"
+            ></div>
+        </div>
+        <div
+            class="grid grid-cols-1 w-full gap-3 relative min-h-[90vh] md:min-h-[50vh] md:grid-cols-2 justify-center"
+        >
+            <div
+            class="flex w-full px-4 justify-center md:justify-end gap-3 relative min-h-[45vh] md:min-h-[25vh] md:items-center"
+            >
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15501.391113182948!2d100.501385!3d13.7578888!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e299135084e50d%3A0x423d31d80f790812!2z4LmC4Lij4LiH4LmA4Lij4Li14Lii4LiZ4Liq4LiV4Lij4Li14Lin4Li04LiX4Lii4Liy!5e0!3m2!1sth!2sth!4v1702528701800!5m2!1sth!2sth"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="w-full h-full rounded-lg"
+            ></iframe>
+            </div>
+            <div class="bg-gray-200  border-gray-200:justify-start justify-center items-center rounded-lg">
+            <div class="flex flex-col relative min-h-[45vh] md:min-h-[25vh] w-full mb-auto">
+            <nav>
+                <div class="nav nav-tabs flex flex-row h-full rounded-lg" id="nav-tab" role="tablist">
+                  <button class="nav-link active rounded-lg" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">รถเมล์</button>
+                  <button class="nav-link rounded-lg" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">mrt</button>
+                  <button class="nav-link rounded-lg" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">รถสามล้อ</button>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">สายรถเมล์511</div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">mrtสามยอด</div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">ตุ๊กๆ</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer-copy">
+        <div class="flex flex-box-border justify-center items-center>
+          <div class="container-fluid ">
+            <div class="col-md-12 grid grid-cols-1 flex-col">
+              <p class ="bg-black w-full text-white text-center md:col-span-full  ">2023 © Satriwit Vichakarn's Website Designed by <a href="https://instagram.com/roboticandai.club?igshid=MzRlODBiNWFlZA==" target="_blank" rel="dofollow" class = "text-blue-500">Robotic &amp; Ai Club</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+</div>
+  </body>
+</html>

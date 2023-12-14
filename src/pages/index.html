@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth md:scroll-auto duration-300">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="/styles/output.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Satriwit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+</head>
+
+    <!--Nav bar Start-->
+<body class="font-mitr">
+    
+    <div id="overlay" class="fixed top-0 left-0 w-full h-full bg-black opacity-70 hidden"></div>
+    <div id="popup" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-8 rounded shadow-md text-center hidden max-w-2xl w-full">
+        <img src="../images/poster.PNG" alt="Ad Image" class="mx-auto max-w-full mb-4 rounded-lg">
+        <p class="mb-4">Welcome To Satriwit Vichakarn'66 !</p>
+        <button onclick="closePopup()" class="bg-red-900 text-white px-4 py-2 rounded">ปิดหน้าต่าง</button>
+    </div>
+    
+    <script>
+        // Function to show the pop-up
+        function openPopup() {
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('popup').style.display = 'block';
+        }
+    
+        // Function to close the pop-up
+        function closePopup() {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('popup').style.display = 'none';
+        }
+    
+        // Trigger the pop-up when the page loads (you might want to use an event like a button click instead)
+        window.onload = function() {
+            openPopup();
+        };
+    </script>
+<div class="z-10">
+    <nav class="fixed z-10 flex flex-wrap w-full justify-center py-[1rem] h-14  md:bg-transparent [2rem] md:h-20 duration-300 ease-in-out" id="home">
+        
+        <div class="container justify-between flex items-center">
+        
+            <img src="../images/logo/aplogo.png" alt="SW Vichakarn logo" class="h-0">
+               
+            <div class="hidden justify-between items-center w-full md:flex md:w-auto">
+                <div class="flex text-black flex-col md:flex-row md:space-x-10 md:font-medium md:text-xl">          
+                    <a href="#home" class="hover:text-sky-700"><div>หน้าหลัก</div></a>
+                    <a href="#info" class="hover:text-sky-700"><div>รายละเอียด</div></a>
+                    <a href="#schedule" class="hover:text-sky-700"><div>กำหนดการ</div></a>
+                    <a href="#faq" class="hover:text-sky-700"><div>คำถามที่พบบ่อย</div></a>
+                    <!--a href="#dev" class="hover:text-sky-700"><div>ทีมผู้พัฒนา</div></a-->
+                    <a href="#contact" class="hover:text-sky-700"><div>ติดต่อเรา</div></a>
+                </div>
+            </div>
+
+            <div  onclick="myFunction()" class=" text-center p-auto p-1 flex flex-col bg-slate-900 bg-opacity-60 space-y-2  rounded shadow md:hidden hover:scale-105 duration-300 ease-in-out">
+                <span class="block w-8 h-1 bg-white"></span>
+                <span class="block w-8 h-1 bg-white"></span>
+                <span class="block w-5 h-1 bg-white"></span>
+            </div>
+        </div>
+
+        <div id="MenuMol" class="hidden flex md:hidden top-14 z-10 fixed bg-slate-900 bg-opacity-60 w-full pb-8">
+            <div class="flex flex-col pt-4 gap-4 text-white ml-8 text-center">
+                <a href="#about" class="hover:text-sky-700 "><div>หน้าหลัก</div></a>
+                <a href="#info" class="hover:text-sky-700"><div>รายละเอียด</div></a>
+                <a href="#activity" class="hover:text-sky-700"><div>กำหนดการ</div></a>
+                <a href="#faq" class="hover:text-sky-700"><div>คำถามที่พบบ่อย</div></a>
+                <!--a href="#cert" class="hover:text-sky-700"><div>ทีมผู้พัฒนา</div></a-->
+                <a href="#contact" class="hover:text-sky-700"><div>ติดต่อเรา</div></a>
+            </div>
+        </div>
+    </nav>
+<!--Nav bar End-->
+    <div class="Home bg-cover bg-no-repeat w-full h-full">
+      <img src="../images/cover.png" class="w-full">
+    </div>
+
+    <div class="container pt-12">
+        <div class="About flex justify-center text-center flex-col gap-y-4 w-3/4 mx-auto" id="info">
+            <h3 class="font-bold text-5xl text-[#6A1D2F]">
+                About
+            </h3>
+            <p class="text-[#42354C] text-lg">
+                "อพอลโลคือเทพแห่งสารพัดสิ่ง แสงสว่าง ดวงอาทิตย์ ซึ่งในวันวิชาการนั้นจะมีการจัดให้นักเรียนโรงเรียนสตรีวิทยาได้แสดงศักยภาพและความสามารถที่หลากหลาย เปรียบเสมือนกับความสามารถของเทพอพอลโลที่เก่งทางด้านดนตรี วิชาการ กีฬา ศิลปะ และที่ขาดไม่ได้คือทักษะด้านสติปัญญา
+                ซึ่งสอดคล้องกับอัตลักษณ์ของโรงเรียนสตรีวิทยา นั่นคือ เรียนเด่น เล่นดี มีวินัย ใฝ่พัฒนา
+                เทพอพอลโลมีชื่อเสียงมากมาย รูปงาม มีความสง่าในตนเอง เเละได้รับการยอมรับ
+                เปรียบเสมือนนักเรียนโรงเรียนสตรีวิทยาที่ไม่หยุดพัฒนาตนเอง และขึ้นชื่อว่าเป็นโรงเรียนสตรีอันดับหนึ่งนั่นเอง”
+            </p>
+        </div>
+
+        <div class="flex gap-y-8 md:gap-y-0 justify-between text-center flex-col md:flex-row w-3/4 mx-auto mt-12" >
+            <div class="flex flex-col justify-center items-center gap-y-2 text-gray-600">
+                <a href ="activity.html"><div class="flex flex-col justify-center items-center">
+                <button class=" btn w-40 h-40 bg-[#DDA34F] rounded-full ">
+                    <img src="../images/hat.png" class="w-4/6 h-4/6 mx-auto"></button>
+                <div>
+                    <h1 class="text-2xl">ตารางกิจกรรม</h1>
+                    <p class="text-lg text-[#f31b1b93]">ตารางกิจกรรมและเวทีภายในงาน</p>
+                </div>
+            </a>
+            </div>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-y-2 text-gray-600">
+                <div class="flex flex-col justify-center items-center">
+                    <a href ="https://script.google.com/macros/s/AKfycbzxxtzpZ85W4jw0GSIhk2Ccjp8X9FTLexLzWPCw7TjICECMeIksTOjDLzp5OhrW1Qi4/exec">
+                        <button class="btn w-40 h-40 bg-[#DDA34F] rounded-full">
+                            <img src="../images/scroll.png" class="w-4/6 h-4/6 mx-auto">
+                        </button>
+                    </a>
+                </div>
+                <div>
+                    <h1 class="text-2xl">ลงทะเบียน</h1>
+                    <p class="text-lg text-[#f31b1b93]">ลงทะเบียนเข้าร่วมงาน</p>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-y-2 text-gray-600">
+                <a href ="map.html"><div class="flex flex-col justify-center items-center">
+                    <button class="btn w-40 h-40 bg-[#DDA34F] rounded-full btn ">
+                    <img src="../images/pegasus.png" class="w-4/6 h-4/6 mx-auto"></button>
+                    </div></a>
+                <div>
+                    <h1 class="text-2xl">แผนผังงาน</h1>
+                    <p class="text-lg text-[#f31b1b93]">แผนผังงานและการเดินทาง</p>
+                </div>
+                
+            </div>
+
+        </div>
+         
+        <div class="wp-block-media-text__content">
+            <div class="wp-block-group alignfull faqbox has-nv-site-bg-color has-text-color has-link-color wp-elements-487b88dda990df0101bfe83580223dcc is-vertical is-content-justification-center is-layout-flex wp-container-2" style="padding-top:2em;padding-right:2em;padding-bottom:2em;padding-left:2em">
+            <h1 class="wp-block-heading has-text-align-center has-neve-link-color-color has-text-color"><strong>FAQ :</strong></h1>
+            
+            
+            
+            <section id="58706b" class="section-58706b gutentor-module gutentor-module-accordion gutentor-module-accordion-enable-toggle width-100"><div class="grid-container">
+            <div id="ddf71d" class="wp-block-gutentor-m6-item section-ddf71d gutentor-module gutentor-module-accordion-item"><div class="gutentor-module-accordion-panel g-a-panel-58706b gutentor-module-accordion-active">
+            <div class="gm-ah-58706b gutentor-module-accordion-item-heading gutentor-module-icon-position-right"><span class="gutentor-module-accordion-panel-handler" role="button"><span class="gutentor-module-accordion-panel-handler-label"><strong>Q: บุคคลภายนอกสามารถเข้าร่วมได้ไหม? </strong></span><span class="gutentor-module-accordion-icon gutentor-enabled-width"><i class="gm-aio-58706b gutentor-module-accordion-icon-open fas fa-angle-double-right"></i><i class="gm-aic-58706b gutentor-module-accordion-icon-close fas fa-angle-double-up"></i></span></span></div>
+            <div class="gm-ab-58706b gutentor-module-accordion-body" style="display: none;">
+            <div id="section-gc78036" class="wp-block-gutentor-e0 section-gc78036 gutentor-element gutentor-element-advanced-text"><div class="gutentor-text-wrap"><p class="gutentor-text"><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-nv-c-1-color">A:</mark> </strong> สามารถเข้าร่วมได้<br></p></div></div>
+            </div>
+            </div></div>
+            
+            
+            
+            <div id="05bc9a" class="wp-block-gutentor-m6-item section-05bc9a gutentor-module gutentor-module-accordion-item"><div class="gutentor-module-accordion-panel g-a-panel-58706b">
+            <div class="gm-ah-58706b gutentor-module-accordion-item-heading gutentor-module-icon-position-right"><span class="gutentor-module-accordion-panel-handler" role="button"><span class="gutentor-module-accordion-panel-handler-label"><strong>Q:  ลงทะเบียนเข้าร่วมได้ที่ไหน? </strong></span><span class="gutentor-module-accordion-icon gutentor-enabled-width"><i class="gm-aio-58706b gutentor-module-accordion-icon-open fas fa-angle-double-right"></i><i class="gm-aic-58706b gutentor-module-accordion-icon-close fas fa-angle-double-up"></i></span></span></div>
+            <div class="gm-ab-58706b gutentor-module-accordion-body">
+            <div id="section-g8ee255" class="wp-block-gutentor-e0 section-g8ee255 gutentor-element gutentor-element-advanced-text"><div class="gutentor-text-wrap"><p class="gutentor-text"><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-nv-c-1-color">A:</mark> </strong> ลงทะเบียนเข้าร่วมได้ ลงทะเบียนล่วงหน้า ฟรี <a href="https://script.google.com/macros/s/AKfycbzxxtzpZ85W4jw0GSIhk2Ccjp8X9FTLexLzWPCw7TjICECMeIksTOjDLzp5OhrW1Qi4/exec" target="_blank" rel="noreferrer noopener"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-nv-c-1-color"></mark></a></p></div></div>
+            </div>
+            </div></div>
+            
+            
+            
+            <div id="9405e2" class="wp-block-gutentor-m6-item section-9405e2 gutentor-module gutentor-module-accordion-item"><div class="gutentor-module-accordion-panel g-a-panel-58706b">
+            <div class="gm-ah-58706b gutentor-module-accordion-item-heading gutentor-module-icon-position-right"><span class="gutentor-module-accordion-panel-handler" role="button"><span class="gutentor-module-accordion-panel-handler-label"><strong>Q:</strong>&nbsp;<strong> รูปแบบการจัดกิจกรรมปีนี้ จัดแบบไหน</strong></span><span class="gutentor-module-accordion-icon gutentor-enabled-width"><i class="gm-aio-58706b gutentor-module-accordion-icon-open fas fa-angle-double-right"></i><i class="gm-aic-58706b gutentor-module-accordion-icon-close fas fa-angle-double-up"></i></span></span></div>
+            <div class="gm-ab-58706b gutentor-module-accordion-body">
+            <div id="section-g57f30f" class="wp-block-gutentor-e0 section-g57f30f gutentor-element gutentor-element-advanced-text"><div class="gutentor-text-wrap"><p class="gutentor-text"><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-nv-c-1-color">A:</mark></strong>  จัดแบบ On site จัดที่มหาวิทยาลัยมหิดล ศาลายา นครปฐม</p></div></div>
+            </div>
+            </div></div>
+            
+            
+            
+            <div id="a4dc8c" class="wp-block-gutentor-m6-item section-a4dc8c gutentor-module gutentor-module-accordion-item"><div class="gutentor-module-accordion-panel g-a-panel-58706b">
+            <div class="gm-ah-58706b gutentor-module-accordion-item-heading gutentor-module-icon-position-right"><span class="gutentor-module-accordion-panel-handler" role="button"><span class="gutentor-module-accordion-panel-handler-label"><strong>Q:</strong>&nbsp;<strong> การเข้าร่วมกิจกรรมมีค่าใช้จ่ายหรือไม่</strong></span><span class="gutentor-module-accordion-icon gutentor-enabled-width"><i class="gm-aio-58706b gutentor-module-accordion-icon-open fas fa-angle-double-right"></i><i class="gm-aic-58706b gutentor-module-accordion-icon-close fas fa-angle-double-up"></i></span></span></div>
+            <div class="gm-ab-58706b gutentor-module-accordion-body">
+            <div id="section-g9aeee8" class="wp-block-gutentor-e0 section-g9aeee8 gutentor-element gutentor-element-advanced-text"><div class="gutentor-text-wrap"><p class="gutentor-text"><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-nv-c-1-color">A:</mark> </strong> ไม่มีค่าใช้จ่าย เข้าชมฟรีตลอดการจัดงาน</p></div></div>
+            </div>
+            </div></div>
+            
+            
+            
+            <div id="03ac2c" class="wp-block-gutentor-m6-item section-03ac2c gutentor-module gutentor-module-accordion-item"><div class="gutentor-module-accordion-panel g-a-panel-58706b">
+            <div class="gm-ah-58706b gutentor-module-accordion-item-heading gutentor-module-icon-position-right"><span class="gutentor-module-accordion-panel-handler" role="button"><span class="gutentor-module-accordion-panel-handler-label"><strong>Q:</strong>&nbsp;<strong> การเข้าร่วมงานสามารถลงทะเบียนเป็นหมู่คณะได้หรือไม่</strong></span><span class="gutentor-module-accordion-icon gutentor-enabled-width"><i class="gm-aio-58706b gutentor-module-accordion-icon-open fas fa-angle-double-right"></i><i class="gm-aic-58706b gutentor-module-accordion-icon-close fas fa-angle-double-up"></i></span></span></div>
+            <div class="gm-ab-58706b gutentor-module-accordion-body">
+            <div id="section-g768aa1" class="wp-block-gutentor-e0 section-g768aa1 gutentor-element gutentor-element-advanced-text"><div class="gutentor-text-wrap"><p class="gutentor-text"><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-nv-c-1-color">A:</mark></strong>  ไม่ได้คะ เนื่องจากผู้ลงทะเบียนต้องยอมรับข้อตกลงฐานะเจ้าของข้อมูล ตาม พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล (PDPA) ทั้งนี้ขอความร่วมมือลงทะเบียนรายบุคคล  </p></div></div>
+            </div>
+            </div></div>
+            
+            
+            
+            <div id="78e9d7" class="wp-block-gutentor-m6-item section-78e9d7 gutentor-module gutentor-module-accordion-item"><div class="gutentor-module-accordion-panel g-a-panel-58706b">
+            <div class="gm-ah-58706b gutentor-module-accordion-item-heading gutentor-module-icon-position-right"><span class="gutentor-module-accordion-panel-handler" role="button"><span class="gutentor-module-accordion-panel-handler-label"><strong>Q:&nbsp; การแต่งกายสำหรับการมาร่วมงาน</strong></span><span class="gutentor-module-accordion-icon gutentor-enabled-width"><i class="gm-aio-58706b gutentor-module-accordion-icon-open fas fa-angle-double-right"></i><i class="gm-aic-58706b gutentor-module-accordion-icon-close fas fa-angle-double-up"></i></span></span></div>
+            <div class="gm-ab-58706b gutentor-module-accordion-body">
+            <div id="section-g042c16" class="wp-block-gutentor-e0 section-g042c16 gutentor-element gutentor-element-advanced-text"><div class="gutentor-text-wrap"><p class="gutentor-text"><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-nv-c-1-color">A:</mark></strong>  สามารถใส่ชุดนักเรียน ชุดพละ ชุดอื่น ๆ ที่สุภาพ เพื่อเป็นการให้เกียรติสถานที่</p></div></div>
+            </div>
+            </div></div>
+            
+            
+            
+            <div id="c52bcb" class="wp-block-gutentor-m6-item section-c52bcb gutentor-module gutentor-module-accordion-item"><div class="gutentor-module-accordion-panel g-a-panel-58706b">
+            <div class="gm-ah-58706b gutentor-module-accordion-item-heading gutentor-module-icon-position-right"><span class="gutentor-module-accordion-panel-handler" role="button"><span class="gutentor-module-accordion-panel-handler-label"><strong>Q:&nbsp; การเข้าร่วมกิจกรรมจะได้รับเกียรติบัตรหรือไม่</strong></span><span class="gutentor-module-accordion-icon gutentor-enabled-width"><i class="gm-aio-58706b gutentor-module-accordion-icon-open fas fa-angle-double-right"></i><i class="gm-aic-58706b gutentor-module-accordion-icon-close fas fa-angle-double-up"></i></span></span></div>
+            <div class="gm-ab-58706b gutentor-module-accordion-body">
+            <div id="section-g50c4ef" class="wp-block-gutentor-e0 section-g50c4ef gutentor-element gutentor-element-advanced-text"><div class="gutentor-text-wrap"><p class="gutentor-text"><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-nv-c-1-color">A:</mark> </strong> เป็นไปตามเงื่อนไขของแต่ละคณะ บางคณะก็ให้เกียรติบัตร บางคณะก็ไม่มีเกียรติบัตรให้</p></div></div>
+            </div>
+            </div></div>
+            
+            
+            
+            <div id="a406ed" class="wp-block-gutentor-m6-item section-a406ed gutentor-module gutentor-module-accordion-item"><div class="gutentor-module-accordion-panel g-a-panel-58706b">
+            <div class="gm-ah-58706b gutentor-module-accordion-item-heading gutentor-module-icon-position-right"><span class="gutentor-module-accordion-panel-handler" role="button"><span class="gutentor-module-accordion-panel-handler-label"><strong>Q:&nbsp; การเดินทาง มายังมหาวิทยาลัยมหิดล ศาลายา</strong></span><span class="gutentor-module-accordion-icon gutentor-enabled-width"><i class="gm-aio-58706b gutentor-module-accordion-icon-open fas fa-angle-double-right"></i><i class="gm-aic-58706b gutentor-module-accordion-icon-close fas fa-angle-double-up"></i></span></span></div>
+            <div class="gm-ab-58706b gutentor-module-accordion-body">
+            <div id="section-gd7a585" class="wp-block-gutentor-e0 section-gd7a585 gutentor-element gutentor-element-advanced-text"><div class="gutentor-text-wrap"><p class="gutentor-text"><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-nv-c-1-color">A:</mark> </strong> มหาวิทยาลัยมีบริการรถ Shuttle Bus ตามรอบเวลาเดินรถ และเพิ่มเติมการรับ-ส่ง ระหว่าง<a>สถานีรถไฟฟ้าบางหว้า – ม.มหิดล ศาลายา – สถานีรถไฟฟ้าบางหว้า</a> <br>โดยแบ่งเป็นรอบเช้า เวลา 07.00 น. และรอบเย็น เวลา 17.00 น. <br>จะมีบริการรถ Shuttle Bus จำนวน 3 เส้นทาง คือ<br><br><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-nv-c-1-color">เส้นทางที่ 1 </mark>:&nbsp; พญาไท – สถานีรถไฟฟ้าอนุเสาวรีย์ – ม.มหิดล ศาลายา – พญาไท<br>  – รอบเช้า จำนวน 2 คัน เวลา 07.15 น. และเวลา 07.30 น.<br>  – รอบเย็น จำนวน 2 คัน เวลา 17.00 น. และเวลา 17.30 น.<br><br><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-nv-c-1-color"> เส้นทางที่ 2</mark> :&nbsp; ศิริราช – ม.มหิดล ศาลายา – ศิริราช<br>  – รอบเช้า จำนวน 2 คัน เวลา 07.20 น. และเวลา 07.30 น.<br>  – รอบเย็น จำนวน 2 คัน เวลา 17.15น. และเวลา 17.30 น.<br><br><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-nv-c-1-color"> เส้นทางที่ 3</mark> :&nbsp; สถานีรถไฟฟ้าบางหว้า – ม.มหิดล ศาลายา – สถานีรถไฟฟ้าบางหว้า<br>  – รอบเช้า เวลา 07.00 น.<br>  – รอบเย็น เวลา 17.00 น.</p></div></div>
+            </div>
+            </div></div>
+            
+            
+            
+            <div id="9db3f1" class="wp-block-gutentor-m6-item section-9db3f1 gutentor-module gutentor-module-accordion-item"><div class="gutentor-module-accordion-panel g-a-panel-58706b">
+            <div class="gm-ah-58706b gutentor-module-accordion-item-heading gutentor-module-icon-position-right"><span class="gutentor-module-accordion-panel-handler" role="button"><span class="gutentor-module-accordion-panel-handler-label"><strong>Q:&nbsp; ลงทะเบียนเข้าร่วมแล้วสามารถเปลี่ยนวัน เปลี่ยนรอบเวลาได้หรือไม่</strong>          </span><span class="gutentor-module-accordion-icon gutentor-enabled-width"><i class="gm-aio-58706b gutentor-module-accordion-icon-open fas fa-angle-double-right"></i><i class="gm-aic-58706b gutentor-module-accordion-icon-close fas fa-angle-double-up"></i></span></span></div>
+            <div class="gm-ab-58706b gutentor-module-accordion-body">
+            <div id="section-gf69373" class="wp-block-gutentor-e0 section-gf69373 gutentor-element gutentor-element-advanced-text"><div class="gutentor-text-wrap"><p class="gutentor-text"><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-nv-c-1-color">A:</mark></strong>  สามารถเปลี่ยนได้แต่อาจกระทบการลงทะเบียนสำหรับคนอื่น ทำให้คนอื่นเสียสิทธิในการเข้าร่วมกิจกรรม ทั้งนี้อยากให้แน่ใจ สำหรับการเลือกวันเวลาที่ชัดเจน</p></div></div>
+            </div>
+            </div></div>
+            
+            
+            
+            <div id="446006" class="wp-block-gutentor-m6-item section-446006 gutentor-module gutentor-module-accordion-item"><div class="gutentor-module-accordion-panel g-a-panel-58706b">
+            <div class="gm-ah-58706b gutentor-module-accordion-item-heading gutentor-module-icon-position-right"><span class="gutentor-module-accordion-panel-handler" role="button"><span class="gutentor-module-accordion-panel-handler-label"><strong>Q:&nbsp; เมื่อมาถึงวันจัดงานต้องทำอย่างไร</strong></span><span class="gutentor-module-accordion-icon gutentor-enabled-width"><i class="gm-aio-58706b gutentor-module-accordion-icon-open fas fa-angle-double-right"></i><i class="gm-aic-58706b gutentor-module-accordion-icon-close fas fa-angle-double-up"></i></span></span></div>
+            <div class="gm-ab-58706b gutentor-module-accordion-body">
+            <div id="section-gb57418" class="wp-block-gutentor-e0 section-gb57418 gutentor-element gutentor-element-advanced-text"><div class="gutentor-text-wrap"><p class="gutentor-text"><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-nv-c-1-color">A:</mark></strong>  ขอให้ไปยังจุดลงทะเบียน จุดใดก็ได้ และนำ Passcode แสดงต่อเจ้าหน้าที่ เพื่อยืนยันตัวตน</p></div></div>
+            </div>
+            </div></div>
+            </div></section>
+            </div>
+            </div>
+            
+                 
+
+    </div>
+    <div class="Contact flex justify-center text-center flex-col gap-y-4 w-100%  bg-red-900 py-10" id="contact">
+        <h2 class="font-bold text-5xl text-yellow-200">Contact us</h2>
+        <p class="text-white  underline underline-offset-8">ติดต่อสอบถาม</p>
+        <div class=" flex w-full justify-center ">
+           <div class="  flex flex-box-border  md:h-100 w-[80%] px-5 py-7 border-4 md:box-content rounded-lg bg-white " > 
+                <div class="container grid-cols-1 ">
+                <p class="text-gray-700 py-2 px-4 rounded-lg font-bold">
+                    IG : <a href="https://www.instagram.com/swvichakarn66?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="dofollow" class = "text-red-800 hover\:text-indigo-200">SWVICHAKARN66</a>
+                </p>
+                    <p class ="text-gray-700 font-bold">ที่อยู่โรงเรียน</p>
+                    <p class ="text-gray-700">โรงเรียนสตรีวิทยา 82 ถนนดินสอ แขวงวัดบวรนิเวศ <br> เขตพระนคร กรุงเทพฯ 10200</p>
+                   
+                <p class="text-gray-700 py-2 px-4 rounded-lg">
+                    โทรศัพท์</p>
+                    <p class="text-gray-700">0-2281-6505, 0-2282-1626</p>
+                </p>
+                <p class=" text-gray-700 py-2 px-4 rounded-lg">
+                    อีเมล</p>
+                    <p class="text-gray-700">satriwit@satriwit.ac.th</p>
+                </p>
+                <p class="text-gray-700 py-2 px-4 rounded-ly">
+                    เวลาราชการ</p>
+                    <p class="text-gray-700">จ.-ศ. 9.00น. ถึง17.00น.
+                </p>
+                </div>
+            </div>
+            </div>
+          </div>
+
+          <footer class="footer-copy">
+            <div class="flex flex-box-border justify-center items-center>
+              <div class="container-fluid ">
+                <div class="col-md-12 grid grid-cols-1 flex-col">
+                  <p class ="bg-black w-full text-white text-center md:col-span-full  ">2023 © Satriwit Vichakarn's Website Designed by <a href="https://instagram.com/roboticandai.club?igshid=MzRlODBiNWFlZA==" target="_blank" rel="dofollow" class = "text-blue-500">Robotic &amp; Ai Club</a></p>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+
+    </div>
+</div>
+</body>
+</html>
